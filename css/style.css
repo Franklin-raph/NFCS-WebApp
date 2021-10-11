@@ -160,6 +160,26 @@ a {
     flex-direction: column;
 }
 
+.activities-card{
+    width: 20rem;
+    position: relative;
+    margin:0 auto 2rem auto;
+   
+}
+
+#activities-text{
+    padding: 5px 1rem;
+}
+
+#cardShadow{
+    box-shadow: 2px 3px 5px rgb(58, 58, 59);
+}
+
+#cardShadow img:hover{
+    transform: scale(1.1);
+    transition: 2.5s;
+}
+
 @media (max-width: 992px) {
     #numberCount{
         height: 100vh;
