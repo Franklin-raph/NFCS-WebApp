@@ -171,13 +171,16 @@ a {
     padding: 5px 1rem;
 }
 
-#cardShadow{
-    box-shadow: 2px 3px 5px rgb(58, 58, 59);
+.activities_image{
+    overflow: hidden;
 }
 
-#cardShadow img:hover{
-    transform: scale(1.1);
-    transition: 2.5s;
+.activities_image img{
+    transition: all 3s ease;
+}
+
+.activities_image:hover img{
+    transform: scale(1.5);
 }
 
 @media (max-width: 992px) {
