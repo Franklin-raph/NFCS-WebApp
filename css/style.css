@@ -12,6 +12,7 @@
   --secondary-color: #f8c247;
   --font-color: #fff;
   --black-color: #000;
+  --dodgerblue-color: #1e90ff;
 }
 
 li {
@@ -209,6 +210,7 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
 /* REGISTERATION PAGE STYLING */
 #regPage{
     margin: 5rem 0;
@@ -323,6 +325,116 @@ form #login_btn{
 }
 
 
+=======
+
+/****************************contact page****************************/
+.contact{
+    padding: 50px 0px 50px 0px;
+    font-size: large;
+}
+
+.contact_image{
+    border-radius: 100%;
+    width: 200px;
+    padding-top: 30px;
+}
+
+
+#icon{
+    color: var(--dodgerblue-color);
+    font-size: 100px;
+    text-align: center;
+}
+
+.contact_icon #p{
+    text-align: justify;
+}
+
+.form-group{
+    padding-left: 10px;
+}
+
+#head,#foot{
+    background-color: var(--dodgerblue-color);
+
+}
+
+
+.form_1{
+    height: 40px !important;
+}
+
+.message{
+    height: 100px !important;
+}
+
+.title{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+
+#links{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#contatti a{
+    color: #fff;
+    text-decoration: none;
+}
+      
+      
+      @media (max-width: 575.98px) {
+      
+        #contatti{padding-bottom: 800px;}
+        #contatti .maps iframe{
+          width: 100%;
+          height: 450px;
+        }
+       }
+      
+      
+      @media (min-width: 576px) {
+      
+         #contatti{padding-bottom: 800px;}
+      
+         #contatti .maps iframe{
+           width: 100%;
+           height: 450px;
+         }
+       }
+      
+      @media (min-width: 768px) {
+      
+        #contatti{padding-bottom: 350px;}
+      
+        #contatti .maps iframe{
+          width: 100%;
+          height: 850px;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        #contatti{padding-bottom: 200px;}
+      
+         #contatti .maps iframe{
+           width: 100%;
+           height: 700px;
+         }
+      }
+
+      @media (min-width: 320px and max-width: 768px){
+          
+          }
+           
+      }
+
+
+
+
+/********************************media query***********************/
+>>>>>>> f79351d6e108138c9c07f858eb57545e44e79306
 @media (max-width: 992px) {
     #numberCount{
         height: 100vh;
