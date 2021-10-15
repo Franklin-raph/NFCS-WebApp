@@ -22,6 +22,20 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+#readMoreIcon{
+    animation: upDown 1s ease infinite;
+}
+
+#readMoreBtn a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
 .navbar{
     background-color: var(--primary-color);
     border-bottom: 3px solid var(--secondary-color);
@@ -62,7 +76,6 @@ a {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* background-attachment:local; */
 }
 
 
@@ -111,16 +124,16 @@ a {
     padding: 12px 30px;
 }
 
-#readMoreBtn{
-    margin-top: 2rem;
-}
-
-#readMoreBtn a:hover{
-    text-decoration: none;
-}
-
-.carousel-caption a:hover{
-    text-decoration: none;
+@keyframes upDown {
+    0%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(-50%);
+    } 
 }
 
 #aboutUs .container{
@@ -131,6 +144,7 @@ a {
     height: 85%;
     width: 85%;
 }
+
 
 #numberCount{
     background-image:
@@ -194,16 +208,153 @@ a {
     padding: 20px;
 }
 
+
+/* REGISTERATION PAGE STYLING */
+#regPage{
+    margin: 5rem 0;
+    border: 2px solid var(--primary-color);
+}
+
+
+.row #regimage{
+    background: linear-gradient(0, var(--primary-color), var(--secondary-color));
+    padding-top: 18rem;
+}
+
+form h2{
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-bottom: 5px solid var(--primary-color);
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+form #userReg, #passReg, #emailReg, #confirmPassReg{
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+form #reghome, #regSignIn{
+    color: var(--primary-color);
+    margin-bottom: 4px;
+
+}
+
+ .form-row{
+     padding: 2rem;
+     line-height: 2;
+ }
+
+
+#reghome a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#reghome a:hover{
+    color: var(--secondary-color);
+}
+
+
+#regSignInReg a{
+    color: var(--primary-color);
+}
+
+
+#regSignInReg a:hover{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+form #btnReg{
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+
+#btnReg:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+ #logPage{
+    margin: 5rem 0;
+    border: 2px solid var(--primary-color);
+}
+.row #logimage{
+    background: linear-gradient(0, var(--primary-color), var(--secondary-color));
+    padding-top: 12rem;
+}
+
+form #userLog{
+    color: var(--primary-color);
+    margin:1.5rem 0 1.5rem 0;
+}
+
+form #passLog{
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+form #fgPassLog a, #regLog a, #signIn a{
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+
+#fgPassLog a:hover{
+    color: var(--secondary-color);
+}
+
+#regLog a:hover{
+    color: var(--secondary-color);
+}
+
+
+form #login_btn{
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+  
+#login_btn:hover {
+    background-color: var(--primary-color);
+}
+
+
 @media (max-width: 992px) {
     #numberCount{
         height: 100vh;
     }
+
+    /* REGISTERATION PAGE SYTLING */
+    #regPage{
+        margin:16px;
+    }
+     
+    .row #regimage{
+        background: linear-gradient(0, var(--primary-color), var(--secondary-color));
+        padding: 1rem;
+    }
+
+/* LOGIN PAGE STYLING */
+
+    #logPage{
+        margin: 1rem;
+    }
+     
+    .row #logimage{
+        background: linear-gradient(0, var(--primary-color), var(--secondary-color));
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media (max-width: 576px) {
 
     #numberCount{
-        /* height: 100vh; */
         padding: 10px 0;
     }
 
@@ -219,6 +370,40 @@ a {
 
     .num_text h1{
         font-size: 30px;
+    }
+
+
+    /* REGISTERATION PAGE SYTLING */
+    #regPage{
+        margin:16px;
+    }
+     
+    .row #regimage{
+        background: linear-gradient(0, var(--primary-color), var(--secondary-color));
+        padding: 1rem;
+    }
+
+    form h2{
+        font-size: 25px;
+    }
+
+    form #signInReg a, #regSignIn p, #reghome a{
+        font-size: 15px;
+    }
+
+    /* LOGIN PAGE STYLING */
+    #logPage{
+        margin: 1rem;
+    }
+
+    .row #logimage{
+        background: linear-gradient(0, var(--primary-color), var(--secondary-color));
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    form #fgPassLog a, #regLog a, #regLog{
+        font-size: 15px;
     }
 }
 
