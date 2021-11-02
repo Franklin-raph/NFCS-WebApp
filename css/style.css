@@ -12,7 +12,6 @@
   --secondary-color: #f8c247;
   --font-color: #fff;
   --black-color: #000;
-  --dodgerblue-color: #1e90ff;
 }
 
 li {
@@ -209,8 +208,6 @@ a:hover {
     padding: 20px;
 }
 
-
-<<<<<<< HEAD
 /* REGISTERATION PAGE STYLING */
 #regPage{
     margin: 5rem 0;
@@ -325,7 +322,6 @@ form #login_btn{
 }
 
 
-=======
 
 /****************************contact page****************************/
 .contact{
@@ -341,7 +337,7 @@ form #login_btn{
 
 
 #icon{
-    color: var(--dodgerblue-color);
+    color: var(--primary-color);
     font-size: 100px;
     text-align: center;
 }
@@ -355,7 +351,7 @@ form #login_btn{
 }
 
 #head,#foot{
-    background-color: var(--dodgerblue-color);
+    background-color: var(--secondary-color);
 
 }
 
@@ -424,17 +420,8 @@ form #login_btn{
          }
       }
 
-      @media (min-width: 320px and max-width: 768px){
-          
-          }
-           
-      }
-
-
-
 
 /********************************media query***********************/
->>>>>>> f79351d6e108138c9c07f858eb57545e44e79306
 @media (max-width: 992px) {
     #numberCount{
         height: 100vh;
