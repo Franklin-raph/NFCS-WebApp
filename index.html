@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#mynav">
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#">NFCS<span>UNIZIK</span>.com</a>
@@ -27,19 +27,19 @@
                 <i class="fas fa-bars"></i>
             </span>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown mynav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="https://nfcsunizik.netlify.app/#intro">Home</a>
+                <a class="nav-link" href="http://127.0.0.1:5500/#intro">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://nfcsunizik.netlify.app/#aboutUs">About Us</a>
+                <a class="nav-link" href="http://127.0.0.1:5500/#aboutUs">About Us</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="https://nfcsunizik.netlify.app/#activities">Activities</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/#activities">Activities</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://nfcsunizik.netlify.app/#Updates">Updates</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/#Updates">Updates</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,16 +51,8 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://nfcsunizik.netlify.app/#contact">Contact</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/#contact">Contact</a>
                 </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sign In
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#" id="signUpBtn">Sign Up</a>
-              </div>
-            </li> -->
           </ul>
         </div>
       </nav>
@@ -80,8 +72,8 @@
                         <h5 style="visibility: visible;">Lorem Ipsum...</h5>
                     </div>
                     <p>Some text here</p>
-                    <div id="readMoreBtn">
-                        <a href="#">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
+                    <div class="mt-5">
+                        <a href="#" id="readMoreBtn">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
                     </div>
                 </div>
               </div>
@@ -92,8 +84,8 @@
                         <h5>Lorem Ipsum...</h5>
                     </div>
                     <p>Some text here</p>
-                    <div id="readMoreBtn">
-                        <a href="#">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
+                    <div class="mt-5">
+                        <a href="#" id="readMoreBtn">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
                     </div>
                 </div>
               </div>
@@ -104,8 +96,8 @@
                         <h5>Lorem Ipsum...</h5>
                     </div>
                     <p>Some text here</p>
-                    <div id="readMoreBtn">
-                        <a href="#">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
+                    <div class="mt-5">
+                        <a href="#" id="readMoreBtn">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
                     </div>
                 </div>
               </div>
@@ -142,8 +134,8 @@
                   eligendi maiores dignissimos. Reiciendis consequatur iure harum, totam sit placeat molestiae aspernatur.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repudiandae atque, autem, doloremque esse quae nobis a sit 
                   eligendi maiores dignissimos. Reiciendis consequatur iure harum, totam sit placeat molestiae aspernatur.</p>
-                  <div id="readMoreBtn">
-                    <a href="#">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
+                  <div>
+                    <a href="#" id="readMoreBtn">Read more<i class="fas fa-chevron-down mx-2" id="readMoreIcon"></i></a>
                 </div>
             </div>
           </div>
@@ -152,35 +144,48 @@
   </section>
 
 
-  <div style="margin-top: 7rem;">
-    <section class="container">
-      <h2 class="text-center">Priests in residence</h2>
-      <div class="card-deck">
-        <div class="card">
-          <img src="/images/holyMass.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Rev Fr. Remigius Exeokafor</h5>
-            <p class="card-text">A little description about the Priest</p>
-            
+  <div class="container" style="margin-top: 7rem;">
+    <div class="text-center ">
+      <h2 class="mt-5 mb-3">Priests In Residence</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12" id="activities_box">
+        <div class="activities-card shadow">
+            <div class="activities_image">
+            <img src="/images/holyMass.jpg" id="blog-img" class="img-fluid">
+            </div>
+              <div id="activities-text">
+                <h5 class="text-center pt-3 pb-2"><span>Rev Fr. Remigius Ezeokafor</span></h5>
+                  <p>Little description about the priest</p>
+              </div>      
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="/images/holyMass.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Rev Fr. Jude Bernabie</h5>
-            <p class="card-text">A little description about the Priest</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/images/holyMass.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Rev Fr. Joshua</h5>
-            <p class="card-text">A little description about the Priest</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="activities-card shadow">
+            <div class="activities_image">
+              <img src="/images/holyMass.jpg" id="blog-img" class="img-fluid">
+              </div>
+                <div id="activities-text">
+                  <h5 class="text-center pt-3 pb-2"><span>Rev Fr. Jude Bernabie</span></h5>
+                  <p>Little description about the priest</p>
+                </div>      
+              </div>
+            </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="activities-card shadow">
+              <div class="activities_image">
+                <img src="/images/confession1.jpg" id="blog-img" class="img-fluid">
+                </div>
+                  <div id="activities-text">
+                    <h5 class="text-center pt-3 pb-2"><span>Rev Fr. Joshua</span></h5>
+                    <p>Little description about the priest</p>
+                  </div>      
+                </div>
+              </div>
+            </div>
+            </div>
 
   <section id="numberCount">
       <div class="container">
@@ -376,6 +381,10 @@
             <div>
               <h4>Contact us</h4>
             </div>
+
+            <div class="contactIcon my-3">
+                <i class="fas fa-phone mx-2" id="social-icon" aria-hidden="true"></i> <span>+234 815 343 1273</span>
+            </div>
                 <div class="contactIcon my-3">
                   <a href="https://www.facebook.com/nfcsunizikawka/" >
                     <i class="fab fa-facebook-square mx-2" id="social-icon" aria-hidden="true"></i><span>NFCS Unizik Awka</span>
@@ -383,7 +392,7 @@
                 </div>
       
                 <div class="contactIcon my-3">
-                  <a href="https://wa.me/+234 815 343 1273">
+                  <a href="https://wa.me/+2348153431273">
                     <i class="fab fa-whatsapp mx-2" id="social-icon" aria-hidden="true"></i> <span>+234 815 343 1273</span>
                   </a>
                 </div>
