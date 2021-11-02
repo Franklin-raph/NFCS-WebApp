@@ -74,7 +74,7 @@ a:hover {
 
 
 #showBg{
-    background:linear-gradient(rgba(0, 0, 0, 0.575), rgba(0,0,0, 0.575)),
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0, 0.7)),
     url('/images/nauNFCS.jpg');
     height: 100vh;
     background-size: cover;
@@ -84,7 +84,7 @@ a:hover {
 
 
 #showBg1{
-    background:linear-gradient(rgba(0, 0, 0, 0.575), rgba(0,0,0, 0.575)),
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0, 0.7)),
     url('/images/naunfcsimgs.jpg');
     height: 100vh;
     background-size: cover;
@@ -95,7 +95,7 @@ a:hover {
 
 
 #showBg2{
-    background:linear-gradient(rgba(0, 0, 0, 0.575), rgba(0,0,0, 0.575)),
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0, 0.7)),
     url('/images/eesa555.jpg');
     height: 100vh;
     background-size: cover;
@@ -416,7 +416,7 @@ form #login_btn{
         text-align: center;
         text-shadow: 2px 2px 10px #000000;
         font-size: 30px;
-        margin: 1.5rem 0rem 2rem 0rem;
+        margin: 1.5rem 0rem 0rem 0rem;
     }
     #intro .carousel-caption p{
         text-align: center;
@@ -426,7 +426,7 @@ form #login_btn{
 
     .carousel-caption{
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
