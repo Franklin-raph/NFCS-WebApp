@@ -124,6 +124,7 @@ a:hover {
     color: var(--black-color);
     background-color: var(--secondary-color);
     padding: 12px 30px;
+    border-radius: 0%;
 }
 
 #readMoreBtn:hover{
@@ -343,7 +344,7 @@ form #login_btn{
 
     .carousel-caption{
         position: absolute;
-        top: 60%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -407,10 +408,10 @@ form #login_btn{
     .num_text h1{
         font-size: 30px;
     }
-
+/* 
     #intro #carouselExampleCaptions .carousel-indicators{
         display: none;
-    }
+    } */
 
     #intro .carousel-caption h5{
         text-align: center;
