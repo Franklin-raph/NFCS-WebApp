@@ -6,16 +6,33 @@ $('.counter').counterUp({
     new WOW().init(); 
 });
 
-// const nameField = document.querySelector("#name")
-// const emailField = document.querySelector("#email")
-// const messageField = document.querySelector("#message")
-// const submitBtn = document.querySelector("#sendMailBtn")
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  responsiveClass:true,
+  autoplay:true,
+  autoplayTimeout:3000,
+  nav:true,
+  navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+  responsive:{
+      0:{
+          items:1,
+      },
+      600:{
+          items:3,
+      },
+      1000:{
+          items:5,
+      }
+  }
+})
 
-
-
-// submitBtn.addEventListener("click", (e) => {
-//   e.preventDefault()
-//   console.log(nameField.value)
-//   console.log(emailField)
-//   console.log(messageField)
-// })
+Email.send({
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
