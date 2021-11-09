@@ -27,6 +27,41 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
+// const nodemailer = require('nodemailer')
+
+
+// const transporter = nodemailer.createTransport({
+//   service: 'hotmail',
+//   auth: {
+//     user: 'igboekwulusifranklin@outlook.com',
+//     pass: 'emmaofmcap@7'
+//   }
+// });
+
+// let digitCode = Math.floor(100000 + Math.random() * 900000)
+
+// const mailOptions = {
+//   from: 'igboekwulusifranklin@outlook.com',
+//   to: 'igboekwulusifranklin@gmail.com',
+//   subject: 'Sending Email using Node.js',
+//   html: `<h1>Your code is: <br />${digitCode}</h1>`
+// };
+
+// transporter.sendMail(mailOptions, (error, info)=>{
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log('Email sent: ' + info.response);
+//   }
+// });
+
+// document.querySelector('#verifyBtn').addEventListener('click', ()=>{
+//   transporter();
+// })
+
+
+
+
 // Email.send({
 //   Host : "smtp.yourisp.com",
 //   Username : "username",

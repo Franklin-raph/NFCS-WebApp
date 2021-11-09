@@ -60,14 +60,17 @@
       </nav>
 
 <div class="container" id="container">
-    <div class="form-group col-12">
-        <label>6-Digit Code</label>
-        <input type="text" id="digitCode" class="form-control" placeholder="6-Digit Code">
-    </div>
-
-    <div class="form-group col-12"style="display: flex; justify-content: center; align-items: center;">
-        <button type="submit" id="verifyBtn" class="btn btn-primary" style="background-color: #f8c247; color: #000; border: none;">Verify Code</button>
-    </div>
+    <form>
+        <div class="form-group col-12">
+            <label>6-Digit Code</label>
+            <input type="text" id="digitCode" class="form-control" placeholder="6-Digit Code">
+        </div>
+    
+        <div class="form-group col-12"style="display: flex; justify-content: center; align-items: center;">
+            <button type="submit" id="verifyBtn" class="btn btn-primary" style="background-color: #f8c247; color: #000; border: none;">Verify Code</button>
+        </div>
+    </form>
+    
 </div>
 
 <style>
@@ -144,10 +147,10 @@
 
 <script>
     const digitCode = document.querySelector('#digitCode')
-    const submitBtn = document.querySelector('#verifyBtn').addEventListener('click', ()=>{
-
+    const submitBtn = document.querySelector('#verifyBtn').addEventListener('click', (e)=>{
+        e.preventDefault()
         if(digitCode.value === "123456"){
-            console.log("correct")
+            window.location.href = "https://nfcsunizik.netlify.app/registermember.html";
         }else{
             console.log("Incorrect")
         }
