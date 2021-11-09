@@ -1,0 +1,19 @@
+{
+  "name": "nfcs-webapp",
+  "version": "1.0.0",
+  "description": "Nigeria Fedration of Catholic Students Unizik web application",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franklin-raph/NFCS-WebApp.git"
+  },
+  "author": "NFCS ICT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franklin-raph/NFCS-WebApp/issues"
+  },
+  "homepage": "https://github.com/Franklin-raph/NFCS-WebApp#readme"
+}

@@ -48,7 +48,7 @@
                       Members
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Register a Member</a>
+                      <a class="dropdown-item" href="pinconfirm.html">Register a Member</a>
                       <a class="dropdown-item" href="#">View Members</a>
                     </div>
                   </li>
@@ -183,7 +183,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="activities-card shadow">
               <div class="activities_image">
-                <img src="/images/confession1.jpg" id="blog-img" class="img-fluid">
+                <img src="/images/1634050673006.jpg" id="blog-img" width="238px" class="img-fluid ml-5">
                 </div>
                   <div id="activities-text">
                     <h5 class="text-center pt-3 pb-2"><span>Rev Fr. Joshua</span></h5>
@@ -323,7 +323,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12" id="activities_box">
           <div class="activities-card shadow">
               <div class="activities_image">
-              <img src="/images/holyMass1.jpg" id="blog-img" class="img-fluid">
+              <img src="/images/holyMass.jpg" id="blog-img" class="img-fluid">
               </div>
                 <div id="activities-text">
                   <h5 class="text-center pt-3 pb-2"><span>Sunday Masses</span></h5>
@@ -337,7 +337,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="activities-card shadow">
               <div class="activities_image">
-                <img src="/images/holyMass.jpg" id="blog-img" class="img-fluid">
+                <img src="/images/holyMass1.jpg" id="blog-img" class="img-fluid">
                 </div>
                   <div id="activities-text">
                     <h5 class="text-center pt-3 pb-2"><span>Weekday Masses</span></h5>
@@ -367,11 +367,11 @@
   <section id="bibleQuote">
     <div class="container">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-        <!-- <ol class="carousel-indicators">
+        <ol>
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol> -->
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
            <h5>"Do not neglet to do good and to share what you have, for such sacrifces are pleasing to God"</h5> 
@@ -500,10 +500,16 @@
         </div>
     </div>
 </section>
+
+<form method="post">
+  <input type="button" value="Send Email"
+  onclick="sendEmail()" />
+  </form>
 <!--CONTACT FORM ENDS-->
 
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/js/animate.js"></script>
     <script src="/js/wow.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>

@@ -80,8 +80,6 @@ a:hover {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* position: absolute;
-    bottom: 100%; */
 }
 
 
@@ -160,7 +158,6 @@ a:hover {
     height: 85%;
     width: 85%;
 }
-
 
 #numberCount{
     background-image:
@@ -291,11 +288,9 @@ form #reghome, #regSignIn{
     color: var(--secondary-color);
 }
 
-
 #regSignInReg a{
     color: var(--primary-color);
 }
-
 
 #regSignInReg a:hover{
     text-decoration: none;
@@ -312,9 +307,7 @@ form #btnReg{
     background-color: var(--primary-color);
 }
 
-
-
- #logPage{
+#logPage{
     margin: 5rem 0;
     border: 2px solid var(--primary-color);
 }
@@ -430,10 +423,14 @@ form #login_btn{
     .num_text h1{
         font-size: 30px;
     }
-/* 
-    #intro #carouselExampleCaptions .carousel-indicators{
-        display: none;
-    } */
+
+    .owl-prev {
+        left: -10px;
+    }
+    
+    .owl-next {
+        right: -10px;
+    }
 
     #intro .carousel-caption h5{
         text-align: center;
