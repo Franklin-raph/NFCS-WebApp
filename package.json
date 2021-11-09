@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Franklin-raph/NFCS-WebApp/issues"
   },
-  "homepage": "https://github.com/Franklin-raph/NFCS-WebApp#readme"
+  "homepage": "https://github.com/Franklin-raph/NFCS-WebApp#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.0"
+  }
 }
